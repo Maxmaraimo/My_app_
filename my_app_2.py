@@ -1,5 +1,9 @@
 import random
 import sqlite3
+import psycopg2
+
+
+
 
 class User:
     def __init__(self, first_name, last_name, email, password):
@@ -126,7 +130,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-# Add the following code at the end
 
 conn = psycopg2.connect(host="localhost", database="postgres",
                         user="postgres", password="...")
